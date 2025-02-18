@@ -71,19 +71,22 @@
         color: #42b983;
       }
 
-      main {
+      .sidebar {
+        position: relative;
+        top: 50px;
+      }
+
+      /* 
+      這個會造成 跳到 data-id, class anchor 失效
+      main {  
         position: fixed;
         top: 50px;
-      }
+      } */
 
-      .sidebar {
-        top: 50px;
-      }
-
-      .content {
+      /* .content {
         overflow: auto;
         padding-bottom: 30px;
-      }
+      } */
     </style>
   </head>
   <body>
@@ -102,6 +105,7 @@
         loadSidebar: true, // _sidebar.md
 
         homepage: 'README.md',
+        auto2top: true,
 
         sidebar: {
           '/': '_sidebar.md',
@@ -119,7 +123,7 @@
           '/_sidebar.md': '/en/_sidebar.md',
         },
 
-        // subMaxLevel: 2,
+        // subMaxLevel: 2, // 暫不使用
 
         search: {
           maxAge: 86400000, // 搜尋結果緩存一天
