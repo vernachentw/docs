@@ -1,0 +1,48 @@
+.app-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0; /* 將 Navbar 定位在頁面的最左邊 */
+    background-color: #0230ad;
+    color: white;
+    z-index: 1000; /* 確保它位於其他內容之上 */
+    margin-top: 0;
+    height: 50px;
+    padding-right: 40px;
+  }
+
+  .app-nav a {
+    color: #34495e;
+  }
+
+  .app-nav ul:last-child li p:hover {
+    color: #42b983;
+  }
+
+  .app-nav ul:first-child {
+    padding-left: 0;
+  }
+
+  /* Gips  */
+  .navbar-logo {
+    height: 40px;
+    cursor: default;
+  }
+
+  .home-icon {
+    font-size: 24px;
+    margin-left: auto; /* 將 Home icon 放到右邊 */
+    color: #fff;
+  }
+
+  .home-icon:hover {
+    color: #42b983;
+  }
+
+  .sidebar {
+    position: relative;
+    top: 50px;
+  }

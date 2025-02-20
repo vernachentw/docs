@@ -29,56 +29,15 @@
       rel="stylesheet"
       href="https://unpkg.com/docsify-plugin-toc@1.3.1/dist/light.css"
     />
+    <!-- <link
+      rel="stylesheet"
+      href="//cdn.jsdelivr.net/gh/LIGMATV/docsify-navbar-fixed/navbar-fixed.css"
+    /> -->
+
+    <!-- <link rel="stylesheet" href="./style/style.css" /> -->
+    <link rel="stylesheet" href="./style/cus-style.css" />
+
     <style>
-      .app-nav {
-        display: flex;
-        justify-content: space-between; /* 左右對齊 */
-        align-items: center; /* 垂直居中 */
-        width: 100vw; /* 設定 Navbar 寬度為視口寬度 */
-        position: fixed; /* 固定位置，讓它一直顯示 */
-        top: 0; /* 顯示在頁面頂部 */
-        left: 0; /* 將 Navbar 定位在頁面的最左邊 */
-        background-color: #0230ad; /*自定義背景顏色 */
-        color: white; /*文字顏色*/
-        z-index: 1000; /* 確保它位於其他內容之上 */
-        margin-top: 0;
-        height: 50px;
-        padding-right: 40px;
-      }
-
-      .app-nav a {
-        color: #34495e;
-      }
-
-      .app-nav ul:last-child li p:hover {
-        color: #42b983;
-      }
-
-      .app-nav ul:first-child {
-        padding-left: 0;
-      }
-
-      /* Gips  */
-      .navbar-logo {
-        height: 40px;
-        cursor: default;
-      }
-
-      .home-icon {
-        font-size: 24px;
-        margin-left: auto; /* 將 Home icon 放到右邊 */
-        color: #fff;
-      }
-
-      .home-icon:hover {
-        color: #42b983;
-      }
-
-      .sidebar {
-        position: relative;
-        top: 50px;
-      }
-
       /* 
       這個會造成 跳到 data-id, class anchor 失效
       main {  
@@ -143,7 +102,7 @@
           },
 
           // // 搜索标题的最大层级, 1 - 6
-          depth: 6,
+          depth: 3,
 
           pathNamespaces: /^(\/(tw|en))?/,
         },

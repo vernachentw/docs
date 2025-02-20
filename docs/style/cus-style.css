@@ -1,0 +1,98 @@
+.app-nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0230ad;
+    width: 100%;
+    margin: 0;
+    margin-right: 0 !important;
+    padding: 3px 40px 3px 0;
+    color: #ffffff;
+    transition: 0.2s;
+}
+
+.app-nav li {
+    padding: 0;
+}
+
+.app-nav p img:nth-child(1) {
+    width: 24px;
+    float: left;
+}
+
+.app-nav p:nth-child(2) {
+    float: left;
+    font-weight: 600;
+    margin-left: 16px;
+}
+
+.app-nav li ul {
+    color: #000000;
+}
+
+.app-nav ul:last-child li p:hover {
+    color: #42b983;
+}
+
+.app-nav ul:first-child {
+    padding-left: 0;
+}
+
+.search input,
+.search .clear-button {
+    margin-top: 20%;
+}
+
+section.cover img:first-child {
+    margin-top: 4%;
+}
+
+/* 為了 navbar 所以 padding-top 要設 50px  */
+.markdown-section h1 {
+    font-size: 2rem;
+    padding: 0 0 1rem;
+    margin: 0 !important;
+}
+
+.markdown-section h2 {
+    font-size: 1.75rem;
+    padding: 50px 0 0.8rem;
+    margin: 0 !important;
+}
+
+.markdown-section h3 {
+    font-size: 1.5rem;
+    padding: 50px 0 0.6rem;
+    margin: 0 !important;
+}
+
+.markdown-section h4 {
+    padding: 50px 0 1.6rem;
+    margin: 0 !important;
+} 
+
+/* Gips  */
+.navbar-logo {
+    height: 40px;
+    cursor: default;
+}
+
+.home-icon {
+    font-size: 24px;
+    margin-left: auto;
+    /* 將 Home icon 放到右邊 */
+    color: #fff;
+}
+
+.home-icon:hover {
+    color: #42b983;
+}
+
+
+@media screen and (max-width: 770px) {
+    .search input,
+    .search .clear-button {
+        margin-top: 0%;
+    }
+}
